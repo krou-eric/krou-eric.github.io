@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio – BTS SIO SLAM</title>
+
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <header class="header">
+    <a href="#home" class="logo">Portfolio.</a>
+
+    <div class="bx bx-menu" id="menu-icon"></div>
+
+    <nav class="navbar">
+      <a href="#home" class="active" data-i18n="nav_home">Accueil</a>
+      <a href="#about" data-i18n="nav_about">À propos</a>
+      <a href="#skills" data-i18n="nav_skills">Compétences</a>
+      <a href="#portfolio" data-i18n="nav_projects">Projets</a>
+      <a href="#veille" data-i18n="nav_veille">Veille</a>
+      <a href="#contact" data-i18n="nav_contact">Contact</a>
+
+      <div class="language-switch">
+        <button type="button" class="lang-btn active" data-lang="fr">FR</button>
+        <button type="button" class="lang-btn" data-lang="en">EN</button>
+      </div>
+    </nav>
+  </header>
+
+  <section class="home" id="home">
+    <div class="home-content">
+      <h3 data-i18n="home_intro">Bonjour, moi c'est</h3>
+      <h1>Krou Eric-Donald Akpangni</h1>
+      <h3><span data-i18n="home_role_prefix">Étudiant</span> <span class="multiple-text"></span></h3>
+
+      <p data-i18n="home_desc">
+        Technicien informatique, passionné par le développement web et la cybersécurité.
+        Curieux et motivé, je développe mes compétences via des projets concrets et une veille régulière.
+      </p>
+
+      <div class="social-media">
+        <a href="https://github.com/krou-eric" target="_blank" rel="noreferrer">
+          <i class="bx bxl-github"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/krou-eric-donald-akpangni-37a3b5335" target="_blank" rel="noreferrer">
+          <i class="bx bxl-linkedin"></i>
+        </a>
+      </div>
+
+      <a href="cv/CV (2).pdf" class="btn" download data-i18n="home_cv">Télécharger mon CV</a>
+    </div>
+
+    <div class="home-img">
+      <img src="images/photo.jpeg" alt="Photo de présentation" />
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="about-img">
+    </div>
+
+    <div class="about-content">
+      <h2 class="heading"><span data-i18n="about_title">À propos</span></h2>
+      <h3 data-i18n="about_subtitle">Étudiant en BTS SIO option SLAM</h3>
+      <p data-i18n="about_desc">
+        Je suis étudiant en BTS SIO option SLAM, passionné par le développement informatique.
+        Durant ma formation et mes stages, j'ai travaillé sur des projets concrets (web + backend).
+        J'ai notamment développé une application de gestion de tickets en React/NestJS connectée à MySQL.
+      </p>
+
+      <div class="about-actions">
+        <button
+          class="btn btn-outline cursus-btn"
+          id="toggleCursusBtn"
+          type="button"
+          aria-expanded="false"
+          aria-controls="cursusPanel"
+        >
+          <i class='bx bx-book'></i>
+          <span data-i18n="about_cursus_btn">Voir mon cursus</span>
+          <i class='bx bx-chevron-down chevron'></i>
+        </button>
+      </div>
+
+      <div class="cursus-panel" id="cursusPanel" hidden>
+        <div class="cursus-item">
+          <div class="cursus-date">2025 – 2026</div>
+          <div class="cursus-text">
+            <h4 data-i18n="cursus_1_title">Lycée Carcouet — BTS (2ème année)</h4>
+            <p data-i18n="cursus_1_desc">Services Informatiques Aux Organisations.</p>
+          </div>
+        </div>
+
+        <div class="cursus-item">
+          <div class="cursus-date">2024 – 2025</div>
+          <div class="cursus-text">
+            <h4 data-i18n="cursus_2_title">Lycée Carcouet — BTS (1ère année)</h4>
+            <p data-i18n="cursus_2_desc">Services Informatiques Aux Organisations.</p>
+          </div>
+        </div>
+
+        <div class="cursus-item">
+          <div class="cursus-date">2023 – 2024</div>
+          <div class="cursus-text">
+            <h4 data-i18n="cursus_3_title">Institut Universitaire d'Abidjan — LICENCE 2</h4>
+            <p data-i18n="cursus_3_desc">Génie Informatique.</p>
+          </div>
+        </div>
+
+        <div class="cursus-item">
+          <div class="cursus-date">2022 – 2023</div>
+          <div class="cursus-text">
+            <h4 data-i18n="cursus_4_title">Institut Universitaire d'Abidjan — LICENCE 1</h4>
+            <p data-i18n="cursus_4_desc">Génie Informatique.</p>
+          </div>
+        </div>
+
+        <div class="cursus-item">
+          <div class="cursus-date">2021 – 2022</div>
+          <div class="cursus-text">
+            <h4 data-i18n="cursus_5_title">Baccalauréat</h4>
+            <p data-i18n="cursus_5_desc"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="skills" id="skills">
+    <h2 class="heading"><span data-i18n="skills_title">Mes Compétences</span></h2>
+
+    <div class="skills-grid">
+      <div class="skill-card">
+        <div class="skill-card-title">
+          <i class="bx bx-code-alt"></i>
+          <h3>Frontend</h3>
+        </div>
+
+        <div class="skill-row">
+          <div class="skill-label"><span>HTML / CSS</span><span class="skill-level" data-i18n="level_advanced">Avancé</span></div>
+          <div class="skill-bar"><span class="fill" style="width:85%"></span></div>
+        </div>
+
+        <div class="skill-row">
+          <div class="skill-label"><span>JavaScript</span><span class="skill-level" data-i18n="level_intermediate">Intermédiaire</span></div>
+          <div class="skill-bar"><span class="fill" style="width:70%"></span></div>
+        </div>
+
+        <div class="skill-row">
+          <div class="skill-label"><span>React</span><span class="skill-level" data-i18n="level_intermediate">Intermédiaire</span></div>
+          <div class="skill-bar"><span class="fill" style="width:65%"></span></div>
+        </div>
+
+        <div class="skill-tags">
+          <span class="tag">Responsive</span>
+          <span class="tag">UI/UX</span>
+          <span class="tag">React Router</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-card-title">
+          <i class="bx bx-server"></i>
+          <h3 data-i18n="skills_backend">Backend & API</h3>
+        </div>
+
+        <div class="skill-row">
+          <div class="skill-label"><span>NestJS</span><span class="skill-level" data-i18n="level_intermediate">Intermédiaire</span></div>
+          <div class="skill-bar"><span class="fill" style="width:65%"></span></div>
+        </div>
+
+        <div class="skill-row">
+          <div class="skill-label"><span>PHP (POO)</span><span class="skill-level" data-i18n="level_intermediate">Intermédiaire</span></div>
+          <div class="skill-bar"><span class="fill" style="width:70%"></span></div>
+        </div>
+
+        <div class="skill-row">
+          <div class="skill-label"><span>API REST</span><span class="skill-level" data-i18n="level_intermediate">Intermédiaire</span></div>
+          <div class="skill-bar"><span class="fill" style="width:70%"></span></div>
+        </div>
+
+        <div class="skill-tags">
+          <span class="tag">CRUD</span>
+          <span class="tag">DTO</span>
+          <span class="tag" data-i18n="skills_validation">Validation</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-card-title">
+          <i class="bx bx-data"></i>
+          <h3 data-i18n="skills_data">Données & Outils</h3>
+        </div>
+
+        <div class="skill-row">
+          <div class="skill-label"><span>MySQL</span><span class="skill-level" data-i18n="level_intermediate">Intermédiaire</span></div>
+          <div class="skill-bar"><span class="fill" style="width:70%"></span></div>
+        </div>
+
+        <div class="skill-row">
+          <div class="skill-label"><span>Git / GitHub</span><span class="skill-level" data-i18n="level_intermediate">Intermédiaire</span></div>
+          <div class="skill-bar"><span class="fill" style="width:65%"></span></div>
+        </div>
+
+        <div class="skill-row">
+          <div class="skill-label"><span>Postman</span><span class="skill-level" data-i18n="level_intermediate">Intermédiaire</span></div>
+          <div class="skill-bar"><span class="fill" style="width:60%"></span></div>
+        </div>
+
+        <div class="skill-tags">
+          <span class="tag">VS Code</span>
+          <span class="tag" data-i18n="skills_tests">Tests</span>
+          <span class="tag" data-i18n="skills_debug">Debug</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="portfolio" id="portfolio">
+    <h2 class="heading"><span data-i18n="projects_title">Mes Projets</span></h2>
+
+    <div class="portfolio-container">
+      <div class="portfolio-box" data-tags="react nestjs mysql">
+        <img src="images/portfolio1.jpg" alt="Gestion de tickets" />
+        <div class="portfolio-layer">
+          <h4 data-i18n="project1_title">Gestion de Tickets</h4>
+          <p data-i18n="project1_short">Stage ALEOS – React / NestJS / MySQL</p>
+          <button class="btn open-project" data-project="project1" data-i18n="btn_view">Voir</button>
+        </div>
+      </div>
+
+      <div class="portfolio-box" data-tags="php mysql">
+        <img src="images/portfolio2.jpg" alt="Google Analytics" />
+        <div class="portfolio-layer">
+          <h4 data-i18n="project2_title">Google Analytics</h4>
+          <p data-i18n="project2_short">Stage ALEOS – JavaScript / Html / Css / Chart Js</p>
+          <button class="btn open-project" data-project="project2" data-i18n="btn_view">Voir</button>
+        </div>
+      </div>
+
+      <div class="portfolio-box" data-tags="react nestjs">
+        <img src="images/portfolio3.jpg" alt="CRM" />
+        <div class="portfolio-layer">
+          <h4 data-i18n="project3_title">CRM</h4>
+          <p data-i18n="project3_short">Projet – PHP / MySQL</p>
+          <button class="btn open-project" data-project="project3" data-i18n="btn_view">Voir</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="modal" id="projectModal" aria-hidden="true">
+    <div class="modal-content" role="dialog" aria-modal="true" aria-label="Détails du projet">
+      <button class="close" id="modalClose" aria-label="Fermer">&times;</button>
+
+      <div class="modal-header">
+        <h3 id="modalTitle">Titre</h3>
+        <p class="modal-sub" id="modalTech">Technos</p>
+      </div>
+
+      <div class="tech-icons" id="techIcons" aria-label="Technologies du projet"></div>
+
+      <div class="slider" id="slider">
+        <img id="modalMainImage" src="" alt="Capture du projet" />
+        <button class="prev" id="prevBtn" aria-label="Image précédente">&#10094;</button>
+        <button class="next" id="nextBtn" aria-label="Image suivante">&#10095;</button>
+      </div>
+
+      <div class="thumbs" id="thumbs" aria-label="Miniatures du projet"></div>
+
+      <p class="modal-desc" id="modalDesc"></p>
+
+      <div class="modal-actions">
+        <a class="btn" id="modalGithub" href="#" target="_blank" rel="noreferrer">GitHub</a>
+        <a class="btn btn-outline" id="modalDemo" href="#" target="_blank" rel="noreferrer" data-i18n="btn_demo">Démo</a>
+      </div>
+    </div>
+  </div>
+
+  <section class="veille" id="veille">
+    <h2 class="heading"><span data-i18n="veille_title">Veille</span> <span data-i18n="veille_title2" style="color:var(--text-color)">Technologique</span></h2>
+
+    <p class="veille-intro" data-i18n="veille_intro">
+      Comment l'intelligence artificielle transforme-t-elle le travail des développeurs et leurs méthodes de développement ?
+    </p>
+
+    <div class="veille-problematique">
+      <i class="bx bx-bulb"></i>
+      <p data-i18n="veille_problematique">L'IA ne remplace pas les développeurs — elle automatise les tâches répétitives et leur permet de se concentrer sur la conception et l'architecture.</p>
+    </div>
+
+    <div class="veille-category">
+      <h3 class="veille-cat-title">
+        <i class="bx bx-code-curly"></i>
+        <span data-i18n="veille_cat1">Outils IA pour les développeurs</span>
+      </h3>
+      <div class="veille-grid">
+
+        <div class="veille-card">
+          <div class="veille-card-top">
+            <span class="veille-card-name">GitHub Copilot</span>
+            <span class="veille-tag veille-tag-tool" data-i18n="veille_tag_assistant">Assistant IA</span>
+          </div>
+          <p class="veille-card-desc" data-i18n="veille_copilot_desc">Intégré directement dans VS Code, il propose de la complétion de code, génère des fonctions entières et aide au débogage. Selon le COO de GitHub, il rend les développeurs 55% plus productifs.</p>
+          <div class="veille-card-footer">
+            <a href="https://github.com/features/copilot" target="_blank" rel="noreferrer" class="veille-url">github.com/copilot</a>
+            <span class="veille-freq"><span class="veille-dot veille-dot-daily"></span> <span data-i18n="veille_freq_daily">Quotidien</span></span>
+          </div>
+        </div>
+
+        <div class="veille-card">
+          <div class="veille-card-top">
+            <span class="veille-card-name">ChatGPT / Claude</span>
+            <span class="veille-tag veille-tag-tool" data-i18n="veille_tag_assistant">Assistant IA</span>
+          </div>
+          <p class="veille-card-desc" data-i18n="veille_chatgpt_desc">Utilisés pour expliquer du code, proposer des architectures ou débloquer rapidement un problème. Une étude McKinsey montre que l'IA réduit le temps de développement des tâches complexes de 12%.</p>
+          <div class="veille-card-footer">
+            <a href="https://chat.openai.com" target="_blank" rel="noreferrer" class="veille-url">chat.openai.com</a>
+            <span class="veille-freq"><span class="veille-dot veille-dot-daily"></span> <span data-i18n="veille_freq_daily">Quotidien</span></span>
+          </div>
+        </div>
+
+        <div class="veille-card">
+          <div class="veille-card-top">
+            <span class="veille-card-name">Cursor IDE</span>
+            <span class="veille-tag veille-tag-new" data-i18n="veille_tag_new">Nouveau 2024</span>
+          </div>
+          <p class="veille-card-desc" data-i18n="veille_cursor_desc">Environnement de développement entièrement pensé autour de l'IA, apparu en 2024. Il permet de modifier du code en langage naturel directement dans l'éditeur.</p>
+          <div class="veille-card-footer">
+            <a href="https://cursor.sh" target="_blank" rel="noreferrer" class="veille-url">cursor.sh</a>
+            <span class="veille-freq"><span class="veille-dot veille-dot-week"></span> <span data-i18n="veille_freq_weekly">Hebdo</span></span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="veille-category">
+      <h3 class="veille-cat-title">
+        <i class="bx bx-trending-up"></i>
+        <span data-i18n="veille_cat2">Avantages & Limites</span>
+      </h3>
+      <div class="veille-grid veille-grid--2">
+
+        <div class="veille-card veille-card--pro">
+          <div class="veille-card-top">
+            <span class="veille-card-name" data-i18n="veille_avantages_title">Avantages</span>
+            <i class="bx bx-check-circle" style="font-size:2.2rem;color:var(--main-color)"></i>
+          </div>
+          <ul class="veille-list">
+            <li data-i18n="veille_pro1">Gain de productivité : +55% selon GitHub (source : Le Monde Informatique, 2024)</li>
+            <li data-i18n="veille_pro2">60 à 71% des développeurs apprennent plus vite un nouveau langage grâce à l'IA</li>
+            <li data-i18n="veille_pro3">Automatisation des tâches répétitives (CRUD, tests unitaires, documentation)</li>
+            <li data-i18n="veille_pro4">92% des développeurs utilisent déjà des outils IA pour coder (GitHub, 2024)</li>
+          </ul>
+        </div>
+
+        <div class="veille-card veille-card--con">
+          <div class="veille-card-top">
+            <span class="veille-card-name" data-i18n="veille_limites_title">Limites & Risques</span>
+            <i class="bx bx-error-circle" style="font-size:2.2rem;color:#ff6b6b"></i>
+          </div>
+          <ul class="veille-list">
+            <li data-i18n="veille_con1">Code parfois incorrect ou contenant des failles de sécurité (ex : injection SQL)</li>
+            <li data-i18n="veille_con2">Dépendance : un développeur qui ne comprend pas le code généré est bloqué à la première erreur</li>
+            <li data-i18n="veille_con3">Confidentialité : partager du code propriétaire avec une IA externe peut poser des problèmes légaux</li>
+            <li data-i18n="veille_con4">GitHub a dû créer Copilot Autofix en 2024 pour corriger les vulnérabilités générées automatiquement</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="veille-category">
+      <h3 class="veille-cat-title">
+        <i class="bx bx-mobile-alt"></i>
+        <span data-i18n="veille_cat3">Impact sur le développement mobile</span>
+      </h3>
+      <div class="veille-grid">
+
+        <div class="veille-card">
+          <div class="veille-card-top">
+            <span class="veille-card-name">React Native + IA</span>
+            <span class="veille-tag veille-tag-tool">React</span>
+          </div>
+          <p class="veille-card-desc" data-i18n="veille_rn_desc">Les assistants IA génèrent facilement des composants TypeScript, des écrans de connexion, de la navigation ou des appels API REST — directement dans mon stack habituel.</p>
+          <div class="veille-card-footer">
+            <a href="https://reactnative.dev" target="_blank" rel="noreferrer" class="veille-url">reactnative.dev</a>
+            <span class="veille-freq"><span class="veille-dot veille-dot-daily"></span> <span data-i18n="veille_freq_daily">Quotidien</span></span>
+          </div>
+        </div>
+
+        <div class="veille-card">
+          <div class="veille-card-top">
+            <span class="veille-card-name">GitHub Octoverse 2024</span>
+            <span class="veille-tag veille-tag-new" data-i18n="veille_tag_source">Source</span>
+          </div>
+          <p class="veille-card-desc" data-i18n="veille_octo_desc">Le rapport GitHub 2024 enregistre une augmentation de 98% des projets d'IA générative sur la plateforme. Python a dépassé JavaScript en popularité, porté par les projets IA.</p>
+          <div class="veille-card-footer">
+            <a href="https://github.blog/news-insights/research/the-state-of-open-source-and-ai/" target="_blank" rel="noreferrer" class="veille-url">github.blog</a>
+            <span class="veille-freq"><span class="veille-dot veille-dot-week"></span> <span data-i18n="veille_freq_weekly">2024</span></span>
+          </div>
+        </div>
+
+        <div class="veille-card">
+          <div class="veille-card-top">
+            <span class="veille-card-name">Évolution du métier</span>
+            <span class="veille-tag veille-tag-tool" data-i18n="veille_tag_trend">Tendance</span>
+          </div>
+          <p class="veille-card-desc" data-i18n="veille_metier_desc">Le développeur devient davantage un superviseur et un architecte : il formule les besoins, vérifie le code produit par l'IA, et prend les décisions d'architecture. La compréhension reste indispensable.</p>
+          <div class="veille-card-footer">
+            <a href="https://www.lemondeinformatique.fr" target="_blank" rel="noreferrer" class="veille-url">lemondeinformatique.fr</a>
+            <span class="veille-freq"><span class="veille-dot veille-dot-week"></span> <span data-i18n="veille_freq_weekly">2025</span></span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="veille-apport">
+      <div class="veille-apport-icon"><i class="bx bx-user-check"></i></div>
+      <div class="veille-apport-content">
+        <h3 data-i18n="veille_apport_title">Mon apport personnel</h3>
+        <p data-i18n="veille_apport_desc">J'utilise ChatGPT et GitHub Copilot dans mes projets React et NestJS — pour déboguer des erreurs d'API, comprendre de nouveaux patterns ou générer des composants. Cette veille m'a appris qu'il faut toujours relire le code proposé : sur un projet, Copilot avait suggéré une requête qui aurait pu exposer des données. Maîtriser les fondamentaux reste essentiel — l'IA est un outil, pas un substitut à la compréhension.</p>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="contact" id="contact">
+    <h2 class="heading"><span data-i18n="contact_title">Contact Moi</span></h2>
+
+    <form action="https://formspree.io/f/mbdzarbd" method="POST">
+
+      <div class="input-box">
+        <input
+          type="text"
+          name="name"
+          placeholder="Nom complet"
+          data-i18n-placeholder="contact_name"
+          required
+        />
+
+        <input
+          type="email"
+          name="email"
+          placeholder="Adresse email"
+          data-i18n-placeholder="contact_email"
+          required
+        />
+      </div>
+
+      <div class="input-box">
+        <input
+          type="text"
+          name="subject"
+          placeholder="Objet"
+          data-i18n-placeholder="contact_subject"
+          required
+        />
+
+        <input
+          type="text"
+          name="phone"
+          placeholder="Téléphone (optionnel)"
+          data-i18n-placeholder="contact_phone"
+        />
+      </div>
+
+      <textarea
+        name="message"
+        cols="30"
+        rows="10"
+        placeholder="Votre message"
+        data-i18n-placeholder="contact_message"
+        required
+      ></textarea>
+
+      <input
+        type="submit"
+        value="Envoyer"
+        class="btn"
+        data-i18n-value="contact_send"
+      />
+
+    </form>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-text">
+      <p>&copy; 2026 – Krou Eric-Donald Akpangni | Portfolio BTS SIO SLAM</p>
+    </div>
+    <div class="footer-iconTop">
+      <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
