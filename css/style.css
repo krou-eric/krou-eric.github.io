@@ -19,7 +19,7 @@
 }
 
 html{
-  font: size 62.5%;
+  font-size:62.5%;
   overflow-x:hidden;
 }
 
@@ -205,7 +205,6 @@ span{
   box-shadow:0 0 1rem var(--main-color);
 }
 
-/* FIX 2 : about-img vide masquée — on la cache si elle n'a pas d'image */
 .about{
   display:flex;
   justify-content:center;
@@ -482,7 +481,6 @@ span{
   font-size:1.5rem;
 }
 
-/* FIX 5 : Modal scrollable sur mobile */
 .modal{
   display:none;
   position:fixed;
@@ -784,7 +782,6 @@ span{
     height:24rem;
   }
 
-  /* FIX 2 : about sans image = pas de column-reverse inutile */
   .about{
     flex-direction:column;
   }
@@ -814,12 +811,10 @@ span{
     grid-template-columns:1fr;
   }
 
-  /* FIX 4 : champs formulaire en pleine largeur sur mobile */
   .contact .input-box input{
     width:100%;
   }
 
-  /* FIX 5 : modal padding réduit sur mobile */
   .modal{
     padding:1rem;
     align-items:flex-start;
@@ -830,12 +825,14 @@ span{
     border-radius:1.4rem;
   }
 }
+
+/* ── VEILLE ── */
 .veille{
   background:var(--bg-color);
   min-height:auto;
   padding-bottom:10rem;
 }
- 
+
 .veille-intro{
   text-align:center;
   font-size:1.7rem;
@@ -845,7 +842,7 @@ span{
   line-height:1.7;
   font-style:italic;
 }
- 
+
 .veille-problematique{
   display:flex;
   align-items:center;
@@ -857,23 +854,23 @@ span{
   border:1px solid rgba(0,238,255,.2);
   border-radius:1.6rem;
 }
- 
+
 .veille-problematique i{
   font-size:3rem;
   color:var(--main-color);
   flex-shrink:0;
 }
- 
+
 .veille-problematique p{
   font-size:1.5rem;
   line-height:1.7;
   opacity:.9;
 }
- 
+
 .veille-category{
   margin-bottom:5rem;
 }
- 
+
 .veille-cat-title{
   display:flex;
   align-items:center;
@@ -885,21 +882,21 @@ span{
   padding-bottom:1rem;
   border-bottom:1px solid rgba(0,238,255,.15);
 }
- 
+
 .veille-cat-title i{
   font-size:2.4rem;
 }
- 
+
 .veille-grid{
   display:grid;
   grid-template-columns:repeat(3,1fr);
   gap:1.8rem;
 }
- 
+
 .veille-grid--2{
   grid-template-columns:repeat(2,1fr);
 }
- 
+
 .veille-card{
   background:var(--second-bg-color);
   border-radius:1.6rem;
@@ -910,29 +907,29 @@ span{
   gap:.8rem;
   transition:.25s ease;
 }
- 
+
 .veille-card:hover{
   transform:translateY(-4px);
   border-color:rgba(0,238,255,.45);
 }
- 
+
 .veille-card--con:hover{
   border-color:rgba(255,107,107,.4);
 }
- 
+
 .veille-card-top{
   display:flex;
   align-items:flex-start;
   justify-content:space-between;
   gap:.8rem;
 }
- 
+
 .veille-card-name{
   font-size:1.6rem;
   font-weight:600;
   color:var(--text-color);
 }
- 
+
 .veille-tag{
   font-size:1.1rem;
   font-weight:600;
@@ -941,26 +938,26 @@ span{
   white-space:nowrap;
   flex-shrink:0;
 }
- 
+
 .veille-tag-tool{
   background:rgba(0,238,255,.12);
   color:var(--main-color);
   border:1px solid rgba(0,238,255,.25);
 }
- 
+
 .veille-tag-new{
   background:rgba(255,200,100,.12);
   color:#ffc864;
   border:1px solid rgba(255,200,100,.25);
 }
- 
+
 .veille-card-desc{
   font-size:1.4rem;
   opacity:.8;
   line-height:1.65;
   flex:1;
 }
- 
+
 .veille-list{
   list-style:none;
   display:flex;
@@ -968,7 +965,7 @@ span{
   gap:.8rem;
   flex:1;
 }
- 
+
 .veille-list li{
   font-size:1.4rem;
   opacity:.85;
@@ -976,7 +973,7 @@ span{
   padding-left:1.6rem;
   position:relative;
 }
- 
+
 .veille-list li::before{
   content:'›';
   position:absolute;
@@ -984,11 +981,11 @@ span{
   color:var(--main-color);
   font-weight:700;
 }
- 
+
 .veille-card--con .veille-list li::before{
   color:#ff6b6b;
 }
- 
+
 .veille-card-footer{
   display:flex;
   align-items:center;
@@ -997,18 +994,18 @@ span{
   padding-top:1.2rem;
   border-top:1px solid rgba(255,255,255,.06);
 }
- 
+
 .veille-url{
   font-size:1.2rem;
   color:var(--main-color);
   opacity:.7;
   transition:.2s;
 }
- 
+
 .veille-url:hover{
   opacity:1;
 }
- 
+
 .veille-freq{
   font-size:1.2rem;
   opacity:.6;
@@ -1016,23 +1013,23 @@ span{
   align-items:center;
   gap:.5rem;
 }
- 
+
 .veille-dot{
   width:7px;
   height:7px;
   border-radius:50%;
   display:inline-block;
 }
- 
+
 .veille-dot-daily{
   background:var(--main-color);
   box-shadow:0 0 6px var(--main-color);
 }
- 
+
 .veille-dot-week{
   background:#7eb3ff;
 }
- 
+
 .veille-apport{
   display:flex;
   align-items:flex-start;
@@ -1043,7 +1040,7 @@ span{
   border:.15rem solid rgba(0,238,255,.15);
   margin-top:2rem;
 }
- 
+
 .veille-apport-icon{
   width:5rem;
   height:5rem;
@@ -1055,37 +1052,37 @@ span{
   align-items:center;
   justify-content:center;
 }
- 
+
 .veille-apport-icon i{
   font-size:2.4rem;
   color:var(--main-color);
 }
- 
+
 .veille-apport-content h3{
   font-size:1.8rem;
   font-weight:600;
   margin-bottom:.8rem;
   color:var(--main-color);
 }
- 
+
 .veille-apport-content p{
   font-size:1.5rem;
   line-height:1.75;
   opacity:.85;
 }
- 
+
 @media(max-width:991px){
   .veille-grid{
     grid-template-columns:repeat(2,1fr);
   }
 }
- 
+
 @media(max-width:768px){
   .veille-grid,
   .veille-grid--2{
     grid-template-columns:1fr;
   }
- 
+
   .veille-apport{
     flex-direction:column;
   }

@@ -297,6 +297,7 @@ document.addEventListener("DOMContentLoaded", () => {
       desc: "Stage ALEOS – POC d'application de gestion de tickets : création, recherche, affichage, API REST, persistance MySQL.",
       github: "https://github.com/krou-eric/gestion-tickets",
       demo: "",
+      cahier: "cv/cahier-charges-tickets.pdf",
       images: ["images/portfolio1.jpg", "images/portfolio1-2.jpg", "images/portfolio1-3.jpg", "images/portfolio1-4.jpg"]
     },
     project2: {
@@ -395,6 +396,24 @@ document.addEventListener("DOMContentLoaded", () => {
       modalDemo.style.display = "inline-block";
     } else {
       modalDemo.style.display = "none";
+    }
+
+    // Bouton cahier des charges
+    let cahierBtn = document.getElementById('modalCahier');
+    if (!cahierBtn) {
+      cahierBtn = document.createElement('a');
+      cahierBtn.id = 'modalCahier';
+      cahierBtn.className = 'btn btn-outline';
+      cahierBtn.target = '_blank';
+      cahierBtn.rel = 'noreferrer';
+      cahierBtn.innerHTML = '<i class="bx bx-file"></i> Cahier des charges';
+      document.querySelector('.modal-actions').appendChild(cahierBtn);
+    }
+    if (data.cahier) {
+      cahierBtn.href = data.cahier;
+      cahierBtn.style.display = "inline-block";
+    } else {
+      cahierBtn.style.display = "none";
     }
 
     renderTechIcons(data.tags);
