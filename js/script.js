@@ -316,6 +316,7 @@ document.addEventListener("DOMContentLoaded", () => {
       desc: "Application CRM développée en PHP avec une architecture MVC. Permet la gestion des contacts, entreprises et utilisateurs avec un système de rôles (Admin / Standard). Fonctionnalités : authentification, recherche et filtres, CRUD complet, modélisation MCD.",
       github: "https://github.com/krou-eric/crm-php-mvc",
       demo: "",
+      cahier: "cv/cahier-charges-crm.pdf",
       images: [
         "images/crm-dashboard.png",
         "images/crm-usecase.png",
