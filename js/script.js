@@ -298,7 +298,7 @@ document.addEventListener("DOMContentLoaded", () => {
       github: "https://github.com/krou-eric/gestion-tickets",
       demo: "",
       cahier: "cv/cahier-charges-tickets.pdf",
-      images: ["images/portfolio1-new.jpg", "images/portfolio1-2.jpg", "images/portfolio1-3.jpg", "images/portfolio1-4.jpg"]
+      images: ["images/portfolio1-2.jpg", "images/portfolio1-3.jpg", "images/portfolio1-4.jpg"]
     },
     project2: {
       title: "Google Analytics",
