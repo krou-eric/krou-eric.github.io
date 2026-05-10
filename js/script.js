@@ -308,7 +308,7 @@ document.addEventListener("DOMContentLoaded", () => {
       github: "https://github.com/krou-eric/google-analytics-dashboard",
       demo: "",
       cahier: "cv/cahier-charges-analytics.pdf",
-      images: ["images/portfolio2.jpg", "images/portfolio2-2.jpg", "images/portfolio2-3.jpg"]
+      images: ["images/portfolio2.jpg", "images/portfolio2-2.jpg", "images/portfolio2-3.jpg", "images/analytics-oauth.png"]
     },
     project3: {
       title: "CRM",
