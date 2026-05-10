@@ -307,6 +307,7 @@ document.addEventListener("DOMContentLoaded", () => {
       desc: "Stage ALEOS – Dashboard d'analytics avec visualisations Chart.js.",
       github: "https://github.com/krou-eric/google-analytics-dashboard",
       demo: "",
+      cahier: "cv/cahier-charges-analytics.pdf",
       images: ["images/portfolio2.jpg", "images/portfolio2-2.jpg", "images/portfolio2-3.jpg"]
     },
     project3: {
