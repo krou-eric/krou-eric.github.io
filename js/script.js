@@ -319,7 +319,10 @@ document.addEventListener("DOMContentLoaded", () => {
       demo: "",
       cahier: "cv/cahier-charges-crm.pdf",
       images: [
+        "images/crm-login.png",
         "images/crm-dashboard.png",
+        "images/crm-contacts.png",
+        "images/crm-users.png",
         "images/crm-usecase.png",
         "images/crm-mcd.png",
         "images/crm-kanban.png",
